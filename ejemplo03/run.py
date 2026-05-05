@@ -1,26 +1,24 @@
 import requests
 import json
+from config import URL_BASE, BASE_DATOS, LETRAS_FILTRO, AUTH
 
 # Cargar datos desde archivo
 with open('datos.json', 'r') as f:
-    # pasar los datos a estructuras de Python
     data = json.load(f)
 
 lista_datos = []
 
 for d in data['docs']:
-    if d['nombre'][0] in ["A", "B", "L"]:
+    if d['nombre'][0] in LETRAS_FILTRO:
         lista_datos.append(d)
 
-base_datos = "personas003"
 # Configurar el acceso a la base de datos
-url = f"http://127.0.0.1:5984/{base_datos}/_bulk_docs"
+url = f"{URL_BASE}/{BASE_DATOS}/_bulk_docs"
 headers = {'Content-Type': 'application/json'}
 
-# Enviar datos
+# Enviar datos con autenticación
 datos_finales = {'docs': lista_datos}
-response = requests.post(url, headers=headers, json=datos_finales)
+response = requests.post(url, headers=headers, json=datos_finales, auth=AUTH)
 
-# Mostrar respuesta
 print(response.status_code)
 print(response.json())

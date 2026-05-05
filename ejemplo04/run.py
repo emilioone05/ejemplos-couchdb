@@ -1,27 +1,24 @@
 import requests
 import json
+from config import URL_BASE, AUTH, LETRAS_FILTRO
 
 # Cargar datos desde archivo
 with open('datos.json', 'r') as f:
-    # pasar los datos a estructuras de Python
     data = json.load(f)
 
-lista_datos = []
-
-for d in data['docs']:
-    if d['nombre'][0] in ["A", "B", "L"]:
-        lista_datos.append(d)
+# Filtrar datos
+lista_datos = [d for d in data['docs'] if d['nombre'][0] in LETRAS_FILTRO]
 
 base_datos = "personas004"
-# Configurar el acceso a la base de datos
-url = f"http://127.0.0.1:5984/{base_datos}"
+url = f"{URL_BASE}/{base_datos}"
 headers = {'Content-Type': 'application/json'}
 
-# Enviar datos
-
+# Enviar datos uno por uno
 for doc in lista_datos:
-    response = requests.post(
-        url,
-        json=doc
-    )
+    response = requests.post(url, json=doc, auth=AUTH)
     print(f"Insertando {doc['nombre']} | {response.status_code}")
+    
+''' - Ejemplo 3: Eficiente para insertar muchos datos a la vez (inserción batch/masiva)
+    - Ejemplo 4: Inserción secuencial, documento por documento (menos eficiente pero más controlado)
+
+        Ambos están parametrizados con config.py, pero la diferencia clave es el método de inserción.'''
