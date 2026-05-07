@@ -1,0 +1,573 @@
+{
+  "docs": [
+    {
+      "_id": "_design/uno",
+      "views": {
+        "vista1": {
+          "map": "function (doc) {\n  if(doc.lenguaje){\n    emit(doc.lenguaje, doc);\n  }\n}"
+        }
+      },
+      "language": "javascript"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73025585",
+      "nombre": "Alexander",
+      "apellido": "Fuentes",
+      "numero_tarjeta": "38724291619212",
+      "lenguaje": "Kinyarwanda"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73025fb0",
+      "nombre": "Andrew",
+      "apellido": "Wilson",
+      "numero_tarjeta": "574846355802",
+      "lenguaje": "Tamil"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73026281",
+      "nombre": "Susan",
+      "apellido": "Ellison",
+      "numero_tarjeta": "4831253724335445",
+      "lenguaje": "Aragonese"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c730267d6",
+      "nombre": "Calvin",
+      "apellido": "Perez",
+      "numero_tarjeta": "213118328214120",
+      "lenguaje": "Divehi"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c730270f4",
+      "nombre": "James",
+      "apellido": "White",
+      "numero_tarjeta": "4129555955202295694",
+      "lenguaje": "Zhuang"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73027fac",
+      "nombre": "Marc",
+      "apellido": "Patton",
+      "numero_tarjeta": "4887862191059",
+      "lenguaje": "Uighur"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73028d2d",
+      "nombre": "Debbie",
+      "apellido": "Montgomery",
+      "numero_tarjeta": "180083561780592",
+      "lenguaje": "Kongo"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73028e54",
+      "nombre": "Heidi",
+      "apellido": "Park",
+      "numero_tarjeta": "4441847193088830536",
+      "lenguaje": "Korean"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7302944c",
+      "nombre": "Shannon",
+      "apellido": "Swanson",
+      "numero_tarjeta": "30402014023800",
+      "lenguaje": "Kurdish"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7302a127",
+      "nombre": "Grant",
+      "apellido": "Baker",
+      "numero_tarjeta": "180010539757592",
+      "lenguaje": "Oriya"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7302afa3",
+      "nombre": "Nicholas",
+      "apellido": "Duffy",
+      "numero_tarjeta": "4439791450847311",
+      "lenguaje": "Malayalam"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7302b517",
+      "nombre": "Michael",
+      "apellido": "Johnson",
+      "numero_tarjeta": "30153960507623",
+      "lenguaje": "Central Khmer"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7302c278",
+      "nombre": "Lisa",
+      "apellido": "Walters",
+      "numero_tarjeta": "30229682439616",
+      "lenguaje": "Tonga"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7302d26b",
+      "nombre": "Maurice",
+      "apellido": "Long",
+      "numero_tarjeta": "4979769078552",
+      "lenguaje": "Amharic"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7302d8be",
+      "nombre": "Anthony",
+      "apellido": "Butler",
+      "numero_tarjeta": "3565562968406330",
+      "lenguaje": "Arabic"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7302e778",
+      "nombre": "Brittany",
+      "apellido": "Fuentes",
+      "numero_tarjeta": "5285815891770683",
+      "lenguaje": "Samoan"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7302ed46",
+      "nombre": "Jon",
+      "apellido": "Morales",
+      "numero_tarjeta": "4137593120154389113",
+      "lenguaje": "Chuvash"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7302facb",
+      "nombre": "Wendy",
+      "apellido": "Lewis",
+      "numero_tarjeta": "213141693499605",
+      "lenguaje": "Fijian"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c730306b8",
+      "nombre": "Megan",
+      "apellido": "Smith",
+      "numero_tarjeta": "349121647477615",
+      "lenguaje": "Kirghiz"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73030758",
+      "nombre": "Kim",
+      "apellido": "Lee",
+      "numero_tarjeta": "370012529860089",
+      "lenguaje": "Sichuan Yi"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73031427",
+      "nombre": "Amanda",
+      "apellido": "Robinson",
+      "numero_tarjeta": "3558910994236719",
+      "empresa": "Doyle-Castillo"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c730321a6",
+      "nombre": "Cory",
+      "apellido": "Green",
+      "numero_tarjeta": "3585802717027458",
+      "empresa": "Wood, Banks and Drake"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73032b0d",
+      "nombre": "Kenneth",
+      "apellido": "Carpenter",
+      "numero_tarjeta": "4689940638675",
+      "empresa": "Hays Ltd"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303354f",
+      "nombre": "Mitchell",
+      "apellido": "Smith",
+      "numero_tarjeta": "3583219284005027",
+      "empresa": "Tran LLC"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73033650",
+      "nombre": "Cristian",
+      "apellido": "Jefferson",
+      "numero_tarjeta": "213191669924284",
+      "empresa": "Graham LLC"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73034003",
+      "nombre": "Patrick",
+      "apellido": "Barnes",
+      "numero_tarjeta": "3514144975004739",
+      "empresa": "Mcdonald-Morgan"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c730347f4",
+      "nombre": "Michael",
+      "apellido": "Walker",
+      "numero_tarjeta": "501810469129",
+      "empresa": "Bowman, Sweeney and Garcia"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73035467",
+      "nombre": "Karen",
+      "apellido": "Jackson",
+      "numero_tarjeta": "4481435610553",
+      "empresa": "Sanchez Group"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73035559",
+      "nombre": "Laura",
+      "apellido": "Harvey",
+      "numero_tarjeta": "180012213579235",
+      "empresa": "Davenport Ltd"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303620c",
+      "nombre": "Tony",
+      "apellido": "Bell",
+      "numero_tarjeta": "3596887430331581",
+      "empresa": "Weber-Gill"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c730370ac",
+      "nombre": "Bobby",
+      "apellido": "Marshall",
+      "numero_tarjeta": "2266226439336377",
+      "empresa": "Bowers Inc"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c730372c8",
+      "nombre": "Daniel",
+      "apellido": "Santos",
+      "numero_tarjeta": "6011382774263863",
+      "empresa": "Villegas-Mccann"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73037c7c",
+      "nombre": "Veronica",
+      "apellido": "Hines",
+      "numero_tarjeta": "373458549876638",
+      "empresa": "Flores, Jackson and Kim"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73037edc",
+      "nombre": "Nicholas",
+      "apellido": "Brown",
+      "numero_tarjeta": "4814052665317417",
+      "empresa": "Wilkins-Jones"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73038458",
+      "nombre": "Monica",
+      "apellido": "Clark",
+      "numero_tarjeta": "4341273051031683",
+      "empresa": "Beck Ltd"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73038e03",
+      "nombre": "Victor",
+      "apellido": "King",
+      "numero_tarjeta": "345085034509161",
+      "empresa": "Austin-Hunter"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73038e42",
+      "nombre": "Lori",
+      "apellido": "Green",
+      "numero_tarjeta": "3530820034684393",
+      "empresa": "George, Rodriguez and Potter"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c730390b2",
+      "nombre": "Brandon",
+      "apellido": "Rivas",
+      "numero_tarjeta": "180084633522897",
+      "empresa": "Anderson-Thomas"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73039d66",
+      "nombre": "Sarah",
+      "apellido": "Ball",
+      "numero_tarjeta": "4569658270145",
+      "empresa": "Frey PLC"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73039fed",
+      "nombre": "Alejandro",
+      "apellido": "Thompson",
+      "numero_tarjeta": "4121938193079403770",
+      "empresa": "Watson-Morgan"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303a945",
+      "nombre": "Heather",
+      "apellido": "Mckee",
+      "numero_tarjeta": "6011925293494052",
+      "correo": "ggibson@hays.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303aad9",
+      "nombre": "Micheal",
+      "apellido": "Murillo",
+      "numero_tarjeta": "4394147499209804534",
+      "correo": "natashabrooks@yahoo.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303abdb",
+      "nombre": "Timothy",
+      "apellido": "Brewer",
+      "numero_tarjeta": "6011183463810877",
+      "correo": "williammoreno@shaffer.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303b525",
+      "nombre": "Amy",
+      "apellido": "Buchanan",
+      "numero_tarjeta": "340892191491132",
+      "correo": "waltersscott@yahoo.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303b6b2",
+      "nombre": "Sabrina",
+      "apellido": "Davenport",
+      "numero_tarjeta": "3546475246073752",
+      "correo": "dianabrown@george.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303bffe",
+      "nombre": "Tiffany",
+      "apellido": "Michael",
+      "numero_tarjeta": "4438480443192701",
+      "correo": "torresjacob@johnson-gonzalez.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303c8bf",
+      "nombre": "Martin",
+      "apellido": "Wolf",
+      "numero_tarjeta": "6513137772709587",
+      "correo": "hjackson@yahoo.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303d1d6",
+      "nombre": "Joseph",
+      "apellido": "Kemp",
+      "numero_tarjeta": "6011303613238577",
+      "correo": "randy03@yahoo.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303dd7c",
+      "nombre": "Jennifer",
+      "apellido": "Wolf",
+      "numero_tarjeta": "2283693975472297",
+      "correo": "michellelopez@garrett-freeman.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303dff1",
+      "nombre": "Natalie",
+      "apellido": "Howell",
+      "numero_tarjeta": "4956821147913185",
+      "correo": "carljones@stewart.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303e25a",
+      "nombre": "Jennifer",
+      "apellido": "Daniels",
+      "numero_tarjeta": "4589347766869255",
+      "correo": "ekelly@dean.org"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303ef8e",
+      "nombre": "John",
+      "apellido": "Martin",
+      "numero_tarjeta": "060414564793",
+      "correo": "michael23@gmail.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303f531",
+      "nombre": "Chad",
+      "apellido": "Mcdaniel",
+      "numero_tarjeta": "6593624787479879",
+      "correo": "emilygarcia@hotmail.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303f6a9",
+      "nombre": "Andrea",
+      "apellido": "Wilson",
+      "numero_tarjeta": "5439656037981270",
+      "correo": "lynn68@hotmail.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303f9a6",
+      "nombre": "Jessica",
+      "apellido": "Chavez",
+      "numero_tarjeta": "3567175835507855",
+      "correo": "floyddavid@johnson.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7303fda6",
+      "nombre": "Kevin",
+      "apellido": "Coleman",
+      "numero_tarjeta": "3560872027576469",
+      "correo": "turnercraig@garcia.org"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7304044d",
+      "nombre": "Alicia",
+      "apellido": "Keller",
+      "numero_tarjeta": "4533793800528182",
+      "correo": "crystal30@carson-kim.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73040a93",
+      "nombre": "Benjamin",
+      "apellido": "Edwards",
+      "numero_tarjeta": "348826446535816",
+      "correo": "nicholasjohnston@gomez.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73041148",
+      "nombre": "Lynn",
+      "apellido": "Spencer",
+      "numero_tarjeta": "3515653238737033",
+      "correo": "veronicawilliams@lee-rose.biz"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7304194a",
+      "nombre": "Kellie",
+      "apellido": "Kennedy",
+      "numero_tarjeta": "060450629906",
+      "correo": "agonzalez@yahoo.com"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c730419c2",
+      "nombre": "Madison",
+      "apellido": "White",
+      "numero_tarjeta": "3597608955242949",
+      "dia_nacimiento": "04"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73041ec6",
+      "nombre": "Timothy",
+      "apellido": "Barrett",
+      "numero_tarjeta": "6011792974133163",
+      "dia_nacimiento": "21"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7304287c",
+      "nombre": "David",
+      "apellido": "Myers",
+      "numero_tarjeta": "180067959696635",
+      "dia_nacimiento": "31"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73042c67",
+      "nombre": "Catherine",
+      "apellido": "Alvarez",
+      "numero_tarjeta": "4868039188819377866",
+      "dia_nacimiento": "16"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7304379e",
+      "nombre": "Carla",
+      "apellido": "Marshall",
+      "numero_tarjeta": "4269168311022",
+      "dia_nacimiento": "24"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73044686",
+      "nombre": "Lisa",
+      "apellido": "Campbell",
+      "numero_tarjeta": "4179267039427614",
+      "dia_nacimiento": "08"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73044eaa",
+      "nombre": "Todd",
+      "apellido": "Reid",
+      "numero_tarjeta": "4616886844645283",
+      "dia_nacimiento": "07"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73045d33",
+      "nombre": "Carlos",
+      "apellido": "Jones",
+      "numero_tarjeta": "4972068204904",
+      "dia_nacimiento": "06"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73045e1c",
+      "nombre": "John",
+      "apellido": "Taylor",
+      "numero_tarjeta": "6011980602562388",
+      "dia_nacimiento": "30"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73045eb8",
+      "nombre": "Linda",
+      "apellido": "Hernandez",
+      "numero_tarjeta": "3545441592138020",
+      "dia_nacimiento": "29"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73046ced",
+      "nombre": "Brian",
+      "apellido": "Tucker",
+      "numero_tarjeta": "4810876314506747",
+      "dia_nacimiento": "22"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73047bbd",
+      "nombre": "John",
+      "apellido": "Chavez",
+      "numero_tarjeta": "6011459735473730",
+      "dia_nacimiento": "07"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73048295",
+      "nombre": "John",
+      "apellido": "Miles",
+      "numero_tarjeta": "4212971590287759",
+      "dia_nacimiento": "04"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73048678",
+      "nombre": "Anthony",
+      "apellido": "Robinson",
+      "numero_tarjeta": "3591392492346150",
+      "dia_nacimiento": "22"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c730494f4",
+      "nombre": "Nicole",
+      "apellido": "Alvarado",
+      "numero_tarjeta": "6558833164833599",
+      "dia_nacimiento": "17"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c73049c82",
+      "nombre": "Allen",
+      "apellido": "Mccullough",
+      "numero_tarjeta": "372123842992182",
+      "dia_nacimiento": "13"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7304ac3e",
+      "nombre": "Aaron",
+      "apellido": "Brandt",
+      "numero_tarjeta": "340490418680437",
+      "dia_nacimiento": "03"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7304b161",
+      "nombre": "Louis",
+      "apellido": "Adams",
+      "numero_tarjeta": "30576938179036",
+      "dia_nacimiento": "21"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7304b649",
+      "nombre": "Heather",
+      "apellido": "Lopez",
+      "numero_tarjeta": "4924858341589618",
+      "dia_nacimiento": "27"
+    },
+    {
+      "_id": "bfa8367108afa255739eb15c7304b77e",
+      "nombre": "Matthew",
+      "apellido": "Morton",
+      "numero_tarjeta": "3502184790188386",
+      "dia_nacimiento": "22"
+    }
+  ]
+}
